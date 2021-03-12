@@ -1,0 +1,58 @@
+
+import random
+myList =[]
+
+
+def mainProgram():
+    #build our while loop
+    while true:
+	print("Hello, there! Let's work with lists!")
+	print("Please choose from the following options. Type the number of the choice")
+	choice = input("""1. Add th the list,
+2. Return a value at a list ")
+3. Random Search
+4. Quit
+	if choice =="1":
+		addToList()
+	elif choice == "2":
+		indexValues()
+	ilif choice == "3":
+	    randomSearch()
+	else:break   
+
+		
+>>> def addToList():
+	print("Adding to a list! Great choice!")
+	newItem = input("Type an integer here!   ")
+	myList.append(int(newItem))
+	#We need to think about errors!
+
+	
+>>> def indexValues():
+	print("At what index position do you want to search?")
+	indexPos = input("type an index position here:   ")
+	print(myList[int(indexPos)])
+
+	
+>>> if __name__ == "__main__":
+	mainProgram()def mainProgram():
+		myList = []
+		print("Hello, there! Let's work with lists!")
+		print("Please choose from the following options. Type the number of the choice")
+		choice =ninput("1. Add th the list, 2. Return a value at a list ")
+		if choice =="1":
+			addToList()
+		elif choice == "2":
+			indexValues()
+			
+SyntaxError: invalid syntax
+>>> def addToList():
+	print("Adding to a list! Great choice")
+	newItem = input("Type an integer here!")
+	myList.append(int(newItem))
+	#we need to think about errors!
+
+	
+>>> def randomSearch():
+	print("oH IM sO rAnDom!!!")
+	print (myList[random.randit(0,  len(myList)-1)])
