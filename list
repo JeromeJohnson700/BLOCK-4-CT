@@ -1,0 +1,34 @@
+>>> def mainProgram():
+	myList = []
+	print("Hello, there! Let's work with lists!")
+	print("Please choose from the following options. Type the number of the choice")
+	choice =ninput("1. Add th the list, 2. Return a value at a list ")
+	if choice =="1":
+		addToList()
+	elif choice == "2":
+		indexValues()
+
+		
+>>> def addToList():
+	print("Adding to a list! Great choice!")
+	newItem = input("Type an integer here!   ")
+	myList.append(int(newItem))
+	#We need to think about errors!
+
+	
+>>> def indexValues():
+	print("At what index position do you want to search?")
+	indexPos = input("type an index position here:   ")
+	print(myList[int(indexPos)])
+
+	
+>>> if __name__ == "__main__":
+	mainProgram()def mainProgram():
+		myList = []
+		print("Hello, there! Let's work with lists!")
+		print("Please choose from the following options. Type the number of the choice")
+		choice =ninput("1. Add th the list, 2. Return a value at a list ")
+		if choice =="1":
+			addToList()
+		elif choice == "2":
+			indexValues()
